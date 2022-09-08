@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.16)
 
-set(CORE_LIB 4coder-template-core)
+set(CORE_LIB my_project-core)
 
 set(INC_DIR ${CMAKE_CURRENT_SOURCE_DIR}/includes)
 set(SRC_DIR ${CMAKE_CURRENT_SOURCE_DIR}/src)
@@ -9,10 +9,10 @@ set(LIB_DIR ${CMAKE_CURRENT_SOURCE_DIR}/libs)
 set(PUBLIC_INCLUDES
     ${INC_DIR}/Application/Application.h
     ${INC_DIR}/Application/Args.h
+    ${INC_DIR}/Config/IniConf.h
 )
 
 set(PRIVATE_INCLUDES
-    ${SRC_DIR}/Config/IniConf.h
 )
 
 set(PRIVATE_SOURCES

@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.16)
 
-set(Project_name 4coder-template-console)
+set(Project_name my_project-console)
 
 set(SRC_DIR ${CMAKE_CURRENT_SOURCE_DIR}/src)
 
@@ -17,4 +17,4 @@ add_executable(${Project_name}
     ${SOURCES}
 )
 
-target_link_libraries(${Project_name} 4coder-template-core)
+target_link_libraries(${Project_name} my_project-core)

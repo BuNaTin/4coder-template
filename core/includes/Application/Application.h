@@ -7,7 +7,7 @@
 #include <Application/Args.h>
 #include <Config/IniConf.h>
 
-namespace 4coder-template {
+namespace my_project {
 
 class Application {
     // interface

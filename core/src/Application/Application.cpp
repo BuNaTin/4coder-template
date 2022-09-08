@@ -21,7 +21,7 @@ std::function<void(int)> shutdown_handler;
 void signal_handler(int signal) { shutdown_handler(signal); }
 } // namespace
 
-namespace 4coder-template {
+namespace my_project {
 
 class ApplicationImpl final : public Application {
     // interface
@@ -104,7 +104,7 @@ ApplicationImpl::ApplicationImpl(const Args &args,
         hadSigint();
     };
     signal(SIGINT, signal_handler);
-    m_sig_handler.4coder-template_and_set(std::memory_order_acquire);
+    m_sig_handler.test_and_set(std::memory_order_acquire);
 
 }
 

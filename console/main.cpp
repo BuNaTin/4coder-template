@@ -41,7 +41,7 @@ int main(int argc, char *argv[]) {
         return 1;
     }
 
-    auto application = 4coder-template::Application::Builder()
+    auto application = my_project::Application::Builder()
                                .setConfig(args.get(ARG_CONFIG_FILE))
                                .setArgs(args)
                                .build();

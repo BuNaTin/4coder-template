@@ -1,7 +1,6 @@
 #pragma once
 
 #include <fstream>
-#include <optional>
 #include <string>
 #include <unordered_map>
 #include <vector>
@@ -87,7 +86,7 @@ std::vector<T> cast_to_vec(const std::string &data) {
 
 } // namespace
 
-namespace 4coder-template {
+namespace my_project {
 
 /**
  * @brief Parsing .ini configuration files

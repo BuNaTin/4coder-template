@@ -3,6 +3,14 @@ cmake_minimum_required(VERSION 3.16)
 project(exe)
 set(Project exe)
 
+OPTION(STATIC_ANALYS "Use clang-tidy" OFF)
+IF(STATIC_ANALYS)
+    message("Use clang-tidy enabled")
+    set(CMAKE_CXX_CLANG_TIDY clang-tidy -checks=-*,readability-*)
+ELSE()
+    message("Default build")
+ENDIF()
+
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
